@@ -9,7 +9,7 @@ The script fetches all repositories accessible by a user (up to 10.000) to the d
 - [jq](https://stedolan.github.io/jq/)
 - [git](https://git-scm.com/downloads)
 
-## Installation
+## Installation (Manual)
 
 ### Download
 
@@ -39,3 +39,13 @@ chmod +x ./gh-clone.sh
 Second argument is the destination
 
 Running the script again will overwrite existing backup, useful when executing with cron
+
+## Installation (Docker)
+
+```sh
+docker run -d \
+-e "GITHUB_USERNAME=<your-username>" \
+-e "GITHUB_TOKEN=<your-token>" \
+-v $(pwd):/gh-clone \
+docker.pkg.github.com/mishushakov/gh-clone/gh-clone
+```
