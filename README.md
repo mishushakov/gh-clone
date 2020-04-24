@@ -22,7 +22,7 @@ git clone git@github.com:mishushakov/gh-clone.git
 #### Set environment variables
 
 - `GITHUB_USERNAME` - your GitHub username
-- `GITHUB_TOKEN` - your GitHub token, must have the **repos** permissions
+- `GITHUB_TOKEN` - your GitHub [personal access token](https://github.com/settings/tokens), must have **repo** permission
 
 #### Make the script executable
 
