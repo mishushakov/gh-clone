@@ -6,7 +6,7 @@ The script fetches all repositories accessible by a user (up to 10.000) to the d
 ## Dependencies
 
 - [curl](https://curl.haxx.se/download.html)
-- [jq](https://stedolan.github.io/jq/)
+- [rsync](https://rsync.samba.org/download.html)
 - [git](https://git-scm.com/downloads)
 
 ## Installation (Manual)
@@ -36,7 +36,7 @@ chmod +x ./gh-clone.sh
 ./gh-clone.sh .
 ```
 
-Second argument is the destination
+Second argument is the destination (can also be remote)
 
 Running the script again will overwrite existing backup, useful when executing with cron
 
